@@ -99,14 +99,13 @@ window.addEventListener("DOMContentLoaded", () => {
 			selects.forEach((select) => {
 				if (!e.target.closest(".select")) {
 					select.classList.remove("is-active");
+					itemDisplayBlock();
+					searchBoxValueNone();
 				}
 				if (!(e.target.closest(".select") == select)) {
 					select.classList.remove("is-active");
 				}
 			});
-			itemDisplayBlock();
-
-			searchBoxValueNone();
 		});
 	};
 
