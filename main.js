@@ -82,6 +82,8 @@ window.addEventListener("DOMContentLoaded", () => {
 					selectItems.forEach((item) => {
 						if (item.innerText.toLowerCase().search(value) == -1) {
 							item.style.display = "none";
+						} else {
+							item.style.display = "block";
 						}
 					});
 				} else {
